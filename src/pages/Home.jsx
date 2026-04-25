@@ -17,10 +17,39 @@ const Home = () => {
         </div>
       </nav>
 
-      <section className="flex flex-row items-center justify-center">
-        <div className='bg-orange-500 w-full h-3xl'>Hi</div>
-        <div className='w-full'>
-          <img src="/src/assets/aboutImage.png" className='w-full' />
+      <section className="flex items-stretch">
+        <div className="w-1/2 flex justify-center flex-col box-border px-15 gap-10">
+          <div className='flex flex-col gap-1'>
+            <p className='text-4xl font-bold text-black'>Learn by teaching.</p>
+            <p className='text-4xl font-bold text-blue-600 w-1/2' >Exchange skills, not money</p>
+          </div>
+          <div>
+            <p className='text-lg text-gray-600'>Exyra is a skill-exchange platform where learning and teaching go hand in hand. Users can learn new skills from others while sharing what they already know, creating a balanced system of mutual growth. Instead of paying for courses, people connect, collaborate, and exchange knowledge through real interactions. Whether you're a beginner or experienced, Exyra helps you grow by both learning from others and teaching them in return.</p>
+          </div>
+          <div>
+            <p className='text-lg text-gray-600 tracking-wider'>Learn → Teach → Evolve</p>
+          </div>
+          <div className='flex gap-10 items-center'>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-xl text-lg font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:scale-105 active:scale-99">
+              Get Started
+            </button>
+            <a href="#learn-more" className="text-blue-600 font-medium">
+              Learn More →
+            </a>
+          </div>
+        </div>
+
+        <div className="w-1/2">
+          <img src="/src/assets/aboutImage.png" className="w-full h-full object-cover" />
+        </div>
+      </section>
+
+      <section className="flex items-stretch flex-col gap-5 mt-10">
+        <div className="flex justify-center text-3xl font-bold text-black">
+          How Exyra Works
+        </div>
+        <div className="flex justify-center text-lg text-gray-600 tracking-wider">
+          A simple 3-step process to start learning and teaching on Exyra.
         </div>
       </section>
     </div>
