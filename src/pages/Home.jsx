@@ -1,6 +1,11 @@
 import React from 'react'
 
 const Home = () => {
+  let homeCard = [
+    {svg: "./src/assets/card1.png", Title:"Add Skills", Description:"Add the skills you can teach and the ones you want to learn."},
+    {svg: "./src/assets/card2.webp", Title:"Find People", Description:"Discover people with skills you want and connect."},
+    {svg: "./src/assets/card3.png", Title:"Start Sessions", Description:"Exchange skills in a session and grow together."},
+  ]
   return (
     <div>
       <nav className="text-2xl bg-white border-gray-300 border-b px-8 h-15.5 flex">
@@ -50,6 +55,16 @@ const Home = () => {
         </div>
         <div className="flex justify-center text-lg text-gray-600 tracking-wider">
           A simple 3-step process to start learning and teaching on Exyra.
+        </div>
+        <div className="flex justify-around items-center mt-5 py-15">
+          {homeCard.map((card, index) => (
+            <div className="flex flex-col gap-5 items-center rounded-xl px-5 py-10 w-80 justify-around shadow-xl relative z-10 -mt-10">
+              <img src={card.svg} className="w-10" />
+              <p className="text-xl font-semibold">{card.Title}</p>
+              <p className="text-center text-gray-600">{card.Description}</p>
+            </div>
+          ))}
+          
         </div>
       </section>
     </div>
